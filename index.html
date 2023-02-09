@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Speech Recognition</h1>
+        <hr>
+        <div class="options">
+            <div class="language">
+                <p class="language">Languages</p>
+                <select name="input-language" id="language">
+                    <!-- <option value="">Choose a language</option> -->
+                </select>
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <button class="btn-record">
+            <div class="icon">
+                <img src="https://media2.giphy.com/media/mXbQ2IU02cGRhBO2ye/giphy.gif" alt="">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <p>Start Listening</p>
+        </button>
+
+        <h2 class="heading">Result</h2>
+        <div spellcheck="false" class="result " placeholder="text will be shown here" aria-readonly="true"></div>
+        <p class="interim" ></p>
+
+        <div class="buttons">
+            <button id="btn-clear" class="btn clear">
+                <i class="fa-solid fa-trash"></i>
+                <p>Clear</p>
+            </button>
+            <button id="btn-download" class="btn download">
+                <i class="fa-solid fa-download"></i>
+                <p>Download</p>
+            </button>
+        </div>
+    </div>
+
+    <script src="languages.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
